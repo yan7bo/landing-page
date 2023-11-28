@@ -1,10 +1,11 @@
 * {
-    border: solid red;
+    font-family: 'Roboto';
 }
 
 body {
     padding: 0;
     margin: 0;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -14,8 +15,13 @@ body {
     flex: 0;
 }
 
+.content {
+    flex: 1;
+}
+
 .header {
     height: 36px;
+    padding: 0px 48px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -31,17 +37,13 @@ body {
 .header-links {
     padding: 0;
     display: flex;
-    gap: 8px;
+    gap: 12px;
 }
 
 li {
     list-style-type: none;
-    font-size: 12px;
+    font-size: 18px;
     color: #F9FAF8;
-}
-
-.content {
-    flex: 1;
 }
 
 .footer {
@@ -52,4 +54,54 @@ li {
     background-color: #1F2937;
     font-size: 12px;
     color: #F9FAF8;
+}
+
+.hero {
+    background-color: #1F2937;
+    display: flex;
+    align-items: stretch;
+    padding: 48px 48px;
+    height: 250px;
+    gap: 16px;
+}
+
+.hero-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+}
+
+#hero-main {
+    font-size: 48px;
+    font-weight: bolder;
+    color: #F9FAF8;
+}
+
+#hero-secondary {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+button {
+    background-color: #3882F6;
+    color: #F9FAF8;
+    font-weight: 800;
+    width: 80px;
+    padding: 6px;
+    border-radius: 12px;
+}
+
+#hero-placeholder {
+    height: auto;
+    width: 500px;
+    padding: 16px;
+    background-color: #E5E7EB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero-placeholder a {
+    text-align: center;
 }
